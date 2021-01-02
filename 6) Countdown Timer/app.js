@@ -74,7 +74,7 @@ function getRemainingTime() {
   if (time < 0) {
     // stop interval
     clearInterval(interval);
-    countdown.innerHTML = `<h3>You are late. The final match has started already.</h3>`;
+    countdown.innerHTML = `<h3>You were late for the New Year party :/</h3>`;
   }
 }
 // calling function every second
