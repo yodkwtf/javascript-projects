@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <!-- css -->
+  <link rel="stylesheet" href="./styles.css" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <body>
+    <!-- container -->
+    <div class="container">
+      <h1 class="title">Weather App</h1>
+      <h2 id="location" class="location"></h2>
+      <h3 id="description" class="description"></h3>
+      <h1 id="temperature" class="temperature"></h1>
+      <h4>
+        <span id="max-temp"></span>&nbsp;&nbsp;&nbsp;<span id="min-temp"></span>
+      </h4>
+      <div>
+        <img id="icon" class="icon" />
+      </div>
+      <ul class="details" id="details">
+        <li class="detail-item" id="wind-speed"></li>
+        <li class="detail-item" id="humidity"></li>
+        <li class="detail-item" id="pressure"></li>
+        <li class="detail-item" id="feels-like"></li>
+        <!-- <li class="detail-item" id="">else</li> -->
+      </ul>
+      <button class="change-btn btn" id="change-btn">enter location</button>
+    </div>
+    <!-- end of container -->
+
+    <!-- modal -->
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal">
+        <form>
+          <label for="city">City:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="city"
+            placeholder="Enter City Name..."
+          />
+          <label for="country">Country:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="country"
+            placeholder="Enter Country Name..."
+          />
+          <button id="cancel-btn" class="btn">Cancel</button>
+          <button type="submit" id="save-btn" class="btn">Save</button>
+        </form>
+      </div>
+    </div>
+    <!-- end of modal -->
+
+    <!-- javascript -->
+    <script src="./js/storage.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/ui.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
