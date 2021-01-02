@@ -28,7 +28,7 @@ const countdown = document.querySelector('.countdown');
 const countItems = document.querySelectorAll('.count-item h4');
 
 // setting up final date
-const finalDate = new Date(2021, 0, 1, 0, 00, 00);
+const finalDate = new Date(2022, 0, 1, 0, 00, 00);
 
 // extracting time inputs from final date
 const weekday = weekdays[finalDate.getDay()],
