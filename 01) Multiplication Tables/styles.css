@@ -3,7 +3,7 @@
 Fonts
 ===============
 */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
 
 /*
 =============== 
@@ -45,8 +45,8 @@ Variables
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
   /* font family */
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Open Sans', sans-serif;
   /* transition */
   --transition: all 0.3s linear;
   /* letter-spacing */
@@ -200,20 +200,17 @@ main {
   background: var(--clr-black);
 }
 
-
-
-
 /* styling */
-main h1{
+main h1 {
   /* padding: 0 2rem; */
   text-align: center;
 }
 
-#special-text{
+#special-text {
   color: var(--clr-red-dark);
 }
 
-.error{
+.error {
   background: var(--clr-red-light);
   color: var(--clr-red-dark);
   font-weight: bolder;
@@ -226,28 +223,27 @@ main h1{
   color: var(--clr-white);
 }
 
-.table{
+.table {
   text-align: center;
   padding: 2rem 5rem;
   background: var(--clr-white);
   display: none;
 }
 
-.btn-container{
+.btn-container {
   display: none;
 }
 
-
 /* footer */
 
-footer{
+footer {
   color: var(--clr-white);
   background: var(--clr-black);
   width: 100%;
   padding: 1.5rem 0 0.5rem;
 }
-footer a{
-  color: #489FB5;
+footer a {
+  color: #489fb5;
   transition: var(--transition);
   font-weight: bold;
 }
@@ -255,24 +251,24 @@ footer a:hover,
 .icon a:hover {
   color: var(--clr-white);
 }
-.icon{
+.icon {
   font-size: 1.5rem;
   vertical-align: middle;
 }
-.icon i{
+.icon i {
   transition: var(--transition);
 }
-#twitter i{
-  color: #00A7E7;
+#twitter i {
+  color: #00a7e7;
 }
 #instagram i {
-  color:#EA6960;
+  color: #ea6960;
 }
 #linkedin i {
-  color: #0073B1;
+  color: #0073b1;
 }
 #twitter i:hover,
 #instagram i:hover,
-#linkedin i:hover{
+#linkedin i:hover {
   color: var(--clr-white);
 }
