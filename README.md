@@ -6,5 +6,6 @@ For more info regarding a specific project, navigate to that project's directory
 
 ### Here are the live previews:
 
-1. https://multiplicationtables-dk.netlify.app/
-2. https://countdowntimer-dk.netlify.app/
+1. [Multiplication Table](https://multiplicationtable-dk.netlify.app/)
+2. [Countdown Timer](https://countdowntimer-dk.netlify.app/)
+3. [Mind Relaxer App](https://mindrelaxer-dk.netlify.app/)
