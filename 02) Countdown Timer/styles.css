@@ -40,8 +40,8 @@ Variables
   --clr-white: #fff;
   --clr-black: #222;
   /* particular colors */
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: #e66b6b;
+  --clr-red-dark: #bb2525;
+  --clr-red-light: #ff6584;
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-blue: #166abb;
@@ -51,7 +51,7 @@ Variables
   /* transition */
   --transition: all 0.2s linear;
   /* letter-spacing */
-  --spacing: 0.2rem;
+  --spacing: 0.15rem;
   /* radius */
   --radius: 0.25rem;
   /* shadow */
@@ -78,7 +78,7 @@ Global Styles
 
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-9);
+  background: var(--clr-grey-10);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -183,8 +183,8 @@ HEADER
 header h2 {
   margin: 4rem 0 -2rem;
   text-transform: uppercase;
-  color: var(--clr-blue);
-  text-shadow: 1px 1px 0px var(--clr-black);
+  color: var(--clr-red-light);
+  text-shadow: 2px 2px 2px var(--clr-black);
 }
 
 /* 
@@ -206,6 +206,7 @@ img {
 
 .final-info {
   margin: 2rem auto;
+  line-height: 1.25;
 }
 .info p {
   text-align: justify;
@@ -219,7 +220,7 @@ img {
 }
 
 .count-item {
-  background: var(--clr-blue);
+  background: var(--clr-red-dark);
   color: var(--clr-white);
   width: 5.5rem;
   height: 5.5rem;
@@ -227,9 +228,12 @@ img {
   place-items: center;
   text-align: center;
   margin-right: 1rem;
-  border-radius: 0.2rem;
-  outline: 2.5px solid var(--clr-white);
-  outline-offset: -6px;
+  /* border-radius: 0.2rem; */
+  border-radius: 50%;
+  /* outline: 2.5px solid var(--clr-white); */
+  box-shadow: 0px 0px 10px var(--clr-red-dark);
+  /* outline-offset: 6px; */
+  border: 2px solid white;
 }
 .count-item:nth-child(4) {
   margin-right: 0;

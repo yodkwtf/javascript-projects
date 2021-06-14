@@ -27,8 +27,16 @@ const finalInfo = document.querySelector('.final-info');
 const countdown = document.querySelector('.countdown');
 const countItems = document.querySelectorAll('.count-item h4');
 
+// getting current date (comment out for specific date countdown)
+const today = new Date();
+const tempYear = today.getFullYear();
+const tempMonth = today.getMonth();
+const tempDate = today.getDate();
+
 // setting up final date
-const finalDate = new Date(2022, 0, 1, 0, 00, 00);
+const finalDate = new Date(tempYear, tempMonth, tempDate + 10, 0, 00, 00);
+
+// const finalDate = new Date(2022, 0, 1, 0, 00, 00);
 
 // extracting time inputs from final date
 const weekday = weekdays[finalDate.getDay()],
@@ -40,7 +48,7 @@ const weekday = weekdays[finalDate.getDay()],
 
 // setting up final date info
 finalInfo.textContent = `
-celebrate the new year with us on ${weekday}, ${date} ${month} ${year} `;
+Hopefully, you'll celebrate the speical day with me on ${weekday}, ${date} ${month} ${year} `;
 
 // FUNCTION - to get and update remaining time
 function getRemainingTime() {
@@ -74,7 +82,7 @@ function getRemainingTime() {
   if (time < 0) {
     // stop interval
     clearInterval(interval);
-    countdown.innerHTML = `<h3>You were late for the New Year party :/</h3>`;
+    countdown.innerHTML = `<h3>Unforutnately you missed the launch :/</h3>`;
   }
 }
 // calling function every second
