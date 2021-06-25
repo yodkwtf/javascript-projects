@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music App</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- VIDEO BACKGROUND -->
+    <video src="./assets/video.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <!-- END OF VIDEO BACKGROUND -->
+
+    <main>
+      <header>
+        <h1 class="title">Music App</h1>
+
+        <div class="keys">
+          <!-- single key -->
+          <article class="key">
+            <button class="key-btn"><span>सा</span> <p>Press A</p></button>
+            <audio src="./sounds/sa.mp3" data-key="a"></audio>
+          </article>
+          <!-- end of single key -->
+
+          <!-- single key -->
+          <article class="key">
+            <button class="key-btn"><span>रे</span> <p>Press S</p></button>
+            <audio src="./sounds/re.mp3" data-key="s"></audio>
+          </article>
+          <!-- end of single key -->
+
+          <!-- single key -->
+          <article class="key">
+            <button class="key-btn"><span>ग</span> <p>Press D</p></button>
+            <audio src="./sounds/ga.mp3" data-key="d"></audio>
+          </article>
+          <!-- end of single key -->
+
+          <!-- single key -->
+          <article class="key">
+            <button class="key-btn"><span>म</span> <p>Press F</p></button>
+            <audio src="./sounds/ma.mp3" data-key="f"></audio>
+          </article>
+          <!-- end of single key -->
+
+          <!-- single key -->
+          <article class="key">
+            <button class="key-btn"><span>पा</span> <p>Press G</p></button>
+            <audio src="./sounds/pa.mp3" data-key="g"></audio>
+          </article>
+          <!-- end of single key -->
+
+          <!-- single key -->
+          <article class="key">
+            <button class="key-btn"><span>ध</span> <p>Press H</p></button>
+            <audio src="./sounds/dha.mp3" data-key="h"></audio>
+          </article>
+          <!-- end of single key -->
+
+          <!-- single key -->
+          <article class="key">
+            <button class="key-btn"><span>नी</span> <p>Press J</p></button>
+            <audio src="./sounds/ni.mp3" data-key="j"></audio>
+          </article>
+          <!-- end of single key -->
+
+          <!-- single key -->
+          <article class="key">
+            <button class="key-btn">
+              <span>सां</span>
+              <p>Press K</p>
+            </button>
+
+            <audio src="./sounds/saa.mp3" data-key="k"></audio>
+          </article>
+          <!-- end of single key -->
+        </div>
+      </header>
+
+      <!-- FOOTER -->
+      <footer>
+        Created by
+        <!-- link -->
+        <a href="http://yodkwtf.netlify.app" target="_blank" class="link">
+          Deekayy
+        </a>
+
+        <!-- twitter -->
+        <a href="https://twitter.com/yodkwtf" class="icon" id="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <!-- insta -->
+        <a href="https://www.instagram.com/yodkwtf" class="icon" id="instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <!-- linkedin -->
+        <a
+          href="https://www.linkedin.com/in/durgesh-chaudhary/"
+          class="icon"
+          id="linkedin"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </footer>
+      <!-- END OF FOOTER -->
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
