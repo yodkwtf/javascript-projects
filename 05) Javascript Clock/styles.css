@@ -36,11 +36,11 @@ header {
 
 .title {
   /* margin-bottom: 5rem; */
-  color: var(--clr-dark);
+  color: var(--clr-light);
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 4px;
-  text-shadow: 1px 1px 1px var(--clr-light);
+  text-shadow: 2px 2px 2px var(--clr-dark);
 }
 
 /* 
@@ -73,6 +73,8 @@ CLOCK
   font-size: 2rem;
   color: var(--clr-red);
   text-shadow: 1px 1px 1px var(--clr-dark);
+  line-height: 0.5;
+  font-family: monospace;
 }
 
 .points #twelve {
@@ -147,6 +149,7 @@ CLOCK
 .today h2 {
   font-size: 3.25rem;
   margin-bottom: 0.25rem;
+  text-shadow: 1px 1px 1px var(--clr-red);
 }
 
 /* 
