@@ -1,14 +1,16 @@
-## Mind Relaxer
+## Music App
 
-An app created to relax your mind by breathing in and breathing out. The app consists of very little HTML and mostly uses CSS animations and Javasript setTimeout function.
+A music app built with javascript. The app uses classical Indian 'Sa re Ga Ma Pa...' notes and can be played either with clicks or the respective keyboard keys.
 
 ## Live Preview
 
-[Mind Relaxer](https://mindrelaxer-dk.netlify.app/)
+[Music App](https://musicapp-dk.netlify.app/)
 
-## Tools Used
+## Tools
 
 - HTML & CSS
-- CSS Animations
-- Javascript
+- CSS Transitions and Animations
+- Javascript DOM Manipulation
 - setTimeout() API
+- Video Background with CSS
+- Playing Audio with Javascript
