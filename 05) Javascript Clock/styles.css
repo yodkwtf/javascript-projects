@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --clr-dark: #191516;
+  --clr-light: #fff;
+  --clr-red: #e41515;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #526ba1, #2a3b69);
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr auto;
+  position: relative;
+}
+
+header {
+  padding: 2rem 1rem;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  grid-template-rows: auto 1fr;
+  height: calc(100vh - 61.6px);
+}
+
+.title {
+  /* margin-bottom: 5rem; */
+  color: var(--clr-dark);
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 1px var(--clr-light);
+}
+
+/* 
+=====================
+CLOCK
+=====================
+*/
+
+.clock {
+  width: 20rem;
+  height: 20rem;
+  margin: 0 auto;
+  position: relative;
+  background: #f8f8f8;
+  border: 0.5rem solid #7cb4f1;
+  border-radius: 50%;
+  padding: 1rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.points {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.points h3 {
+  position: absolute;
+  font-size: 2rem;
+  color: var(--clr-red);
+  text-shadow: 1px 1px 1px var(--clr-dark);
+}
+
+.points #twelve {
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.points #three {
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+}
+.points #six {
+  left: 50%;
+  bottom: 0%;
+  transform: translateX(-50%);
+}
+.points #nine {
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+}
+
+.dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1rem;
+  height: 1rem;
+  background: var(--clr-light);
+  border: 4px solid var(--clr-red);
+  border-radius: 50%;
+  transform: translate(-50%, -35%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hand {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  border-radius: 1rem;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  transition: all 0.1s ease-in-out forwards;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#hour-hand {
+  background: var(--clr-dark);
+  width: 4.5rem;
+  height: 0.4rem;
+}
+#min-hand {
+  background: var(--clr-dark);
+  width: 6rem;
+  height: 0.3rem;
+}
+#sec-hand {
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+  background: var(--clr-red);
+  width: 7rem;
+  height: 0.2rem;
+}
+
+.today {
+  margin-top: 2rem;
+  color: var(--clr-light);
+  letter-spacing: 3px;
+}
+
+.today h2 {
+  font-size: 3.25rem;
+  margin-bottom: 0.25rem;
+}
+
+/* 
+=====================
+FOOTER
+=====================
+*/
+
+footer {
+  color: #fff;
+  background: #111;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer .link:hover,
+footer .icon i:hover {
+  color: #fff;
+}
+
+footer .link {
+  color: #489fb5;
+  transition: 0.3s all linear;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-right: 3px solid #fff;
+  margin-right: 1rem;
+}
+footer .icon {
+  font-size: 1.75rem;
+  vertical-align: middle;
+  transition: 0.3s all linear;
+  line-height: 1;
+}
+
+#twitter {
+  color: #00a7e7;
+}
+#instagram {
+  color: #ea6960;
+}
+#linkedin {
+  color: #0073b1;
+}

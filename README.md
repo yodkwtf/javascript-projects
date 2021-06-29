@@ -10,3 +10,4 @@ For more info regarding a specific project, navigate to that project's directory
 2. [Countdown App](https://countdowntimer-dk.netlify.app/)
 3. [Mind Relaxer App](https://mindrelaxer-dk.netlify.app/)
 4. [Music App](https://musicapp-dk.netlify.app/)
+5. [Javascript Clock](https://javascriptclock-dk.netlify.app/)
