@@ -12,3 +12,4 @@ For more info regarding a specific project, navigate to that project's directory
 4. [Music App](https://musicapp-dk.netlify.app/)
 5. [Javascript Clock](https://javascriptclock-dk.netlify.app/)
 6. [Voice Recognition App](https://voicerecognitionapp-dk.netlify.app/)
+7. [Simple Text Animation](https://simpletextanimation-dk.netlify.app/)
