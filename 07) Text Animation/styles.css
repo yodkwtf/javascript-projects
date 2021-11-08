@@ -179,11 +179,12 @@ header {
 
 span {
   opacity: 0;
-  transition: var(--transition);
+  transition: var(--transitionLong);
 }
 
 span.fade {
   opacity: 1;
+  color: red;
 }
 
 /* 

@@ -1,26 +1,29 @@
 // get h1
 const textElement = document.querySelector('.sp-text');
-// get the text inside
-const text = textElement.textContent;
-
-// get all the letters
-const letters = text.split('');
-
+// get all letters inside
+const letters = textElement.textContent.split('');
 // erase the text
 textElement.textContent = '';
 
-console.log(letters);
-
-// dynamically create single letters
+// wrap each letter inside a span
 letters.forEach((letter) => {
   textElement.innerHTML += `<span>${letter}</span>`;
 });
 
-// get all spans
-const spans = document.querySelectorAll('span');
+let i = 0;
 
-spans.forEach((span) =>
-  setInterval(() => {
-    span.classList.add('fade');
-  }, 1000)
-);
+//-ADD ANIMATION FUNCTION
+const addAnimation = () => {
+  const span = document.querySelectorAll('span')[i];
+  span.classList.add('fade');
+  i++;
+  if (i >= letters.length) {
+    return complete();
+  }
+};
+
+// ADD ANIMATION TO LETTERS ONE BY ONE
+const interval = setInterval(addAnimation, 100);
+
+//-COMPLETE ANIMATION FUNCTION
+const complete = () => clearInterval(interval);
