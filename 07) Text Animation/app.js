@@ -24,7 +24,7 @@ function init() {
   };
 
   // ADD ANIMATION TO LETTERS ONE BY ONE
-  const interval = setInterval(addAnimation, 100);
+  const interval = setInterval(addAnimation, 200);
 
   //-COMPLETE ANIMATION FUNCTION
   const complete = () => clearInterval(interval);

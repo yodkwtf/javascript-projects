@@ -157,7 +157,7 @@ ul {
   border: transparent;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
-  padding: 0.65rem 1.25rem;
+  padding: 0.6rem 1rem;
   box-shadow: var(--shadow-1);
   text-transform: uppercase;
   transition: var(--transition);
@@ -192,14 +192,14 @@ header {
   letter-spacing: 4px;
   background: var(--white);
   display: inline-block;
-  padding: 1rem 1.25rem;
+  padding: 1rem 2.5rem;
   outline: 4px solid var(--white);
   outline-offset: 10px;
 }
 @media (max-width: 481px) {
   .sp-text {
-    font-size: 3rem;
-    letter-spacing: 3px;
+    font-size: 2.75rem;
+    padding: 1rem 1.75rem;
   }
 }
 
@@ -208,7 +208,7 @@ span {
   opacity: 0;
   transform: scale(0);
   transition: var(--transition);
-  margin: 0 1px;
+  margin: 0 2px;
   text-shadow: 2px 2px 2px var(--black);
 }
 
